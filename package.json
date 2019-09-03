@@ -6,6 +6,7 @@
   "types": "lib/index.d.ts",
   "scripts": {
     "build": "rm -rf lib && tsc",
+    "install": "npm run build",
     "build:test": "rm -rf testDist && tsc -p test/tsconfig.json",
     "lint": "tslint \"{./**/*.ts,./**/*.tsx}\" --exclude \"{./node_modules/**,./**/*.d.ts}\"",
     "prepublish": "npm run build",
